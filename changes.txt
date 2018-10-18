@@ -1,0 +1,26 @@
+  CHANGES SINCE 1.2
+=====================
+
+Threading in the genetic algorithm is now much more efficient
+Set up continuous integration with Travis
+Added integration tests
+Can now run without Lucene on classpath
+Added HTMLCleaner
+Added StripNontextCharacters
+Genetic algorithm:
+  mutation and recombination rates now evolve by themselves
+  user can set both rates
+  improved choice of questions asked under active learning
+Support for boosting in LuceneDatabase
+  implemented by Fabrizio Fortino
+JSON data source
+  implemented by https://github.com/dmnpignaud
+jar file now runnable
+Added --no-comparators option to genetic algorithm
+Added --original=N option to genetic algorithm
+Added ConfigLoader.loadFromString
+Added --incomplete-data option to genetic algorithm
+Added support for incremental record linkage (plus 1.3 methods)
+Let genetic algorithm use custom comparators from config (ztsmith)
+Split-on property not included in genetic output (ztsmith)
+MongoDB data source (antonimmo)

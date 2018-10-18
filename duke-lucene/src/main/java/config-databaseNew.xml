@@ -1,0 +1,80 @@
+<duke>
+    <!--custom ngram comparator is defined here-->
+<!--     <object class="no.priv.garshol.duke.comparators.QGramComparator"
+            name="NgramComparator">
+        <param name="Q" value="1"/>
+    </object> -->
+    <schema>
+
+
+        <!--threshold helps to compute the confidence score-->
+        <threshold>0.5</threshold>
+
+        <!--property type ID is defined here which acts as a foreign key -->
+        <property type="ID">
+            <name>ID</name>
+        </property>
+
+        <!--property COMPANY with exact name matching comparator-->
+<!--         <property>
+            <name>COMPANY</name>
+            <comparator>no.priv.garshol.duke.comparators.ExactComparator</comparator>
+            <low>0.0</low>
+            <high>1.0</high>
+        </property> -->
+
+        <!--property NAME with exact name matching comparator-->
+        <property>
+            <name>NAME</name>
+            <comparator>no.priv.garshol.duke.comparators.ExactComparator</comparator>
+            <low>0.0</low>
+            <high>1.0</high>
+        </property>
+
+        <!--column COMPANY is with Levenshtein comparator-->
+        <property>
+            <name>COMPANY</name>
+            <comparator>no.priv.garshol.duke.comparators.Levenshtein</comparator>
+            <low>0.0</low>
+            <high>1.0</high>
+        </property>
+
+
+
+
+<!--         property NAME with Ngram comparator
+        <property>
+            <name>NAME</name>
+            <comparator>NgramComparator</comparator>
+            <low>0.0</low>
+            <high>1.0</high>
+        </property> -->
+    </schema>
+
+
+
+<!--     <group>
+        <csv>
+            <param name="input-file" value="CustomerSource.csv"/>
+            <column name="ID" property="ID"/>
+            <column name="NAME" property="NAME"/>
+            <column name="COMPANY" property="COMPANY"/>
+            
+        </csv>
+    </group> -->
+
+ 
+        <csv>
+            <param name="input-file" value="CustomerDest.csv"/>
+            <column name="ID" property="ID"/>            
+            <column name="NAME" property="NAME"/>
+            <column name="COMPANY" property="COMPANY"/>
+        </csv>
+ 
+        <database class="no.priv.garshol.duke.databases.LuceneDatabase">
+        <param name="min-relevance" value="0.99"/>
+        <param name="max-search-hits" value="10"/>
+        <param name="path" value="lucene-index"/>
+        <param name="fuzzy-search" value="false"/>
+    </database>
+</duke>

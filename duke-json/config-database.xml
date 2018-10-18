@@ -1,0 +1,29 @@
+<duke>
+
+  <schema>
+    <threshold>0.89</threshold>
+
+    <property>
+      <name>FIRSTNAME</name>
+      <comparator>no.priv.garshol.duke.comparators.JaroWinklerTokenized</comparator>
+      <low>0.48</low>
+      <high>0.6</high>
+    </property>
+
+    <property>
+      <name>LASTNAME</name>
+      <low>0.48</low>
+      <high>0.6</high>
+    </property>
+  </schema>
+  
+  <data-source class="no.priv.garshol.duke.datasources.JsonDataSource">
+  <param name="input-file" value="C:\Users\SONY VAIO\eclipse-workspace\arti\src\Whatever.json"/>
+  </data-source>
+  
+
+  <database class="no.priv.garshol.duke.databases.LuceneDatabase">
+    <param name="path" value="C:\ASHUTOSH\workspace\tmp\ct-visma-1"/>
+  </database>
+  
+</duke>

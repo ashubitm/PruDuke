@@ -1,0 +1,42 @@
+<duke>
+
+  <schema>
+    <threshold>0.49</threshold>
+
+    <property>
+      <name>FIRSTNAME</name>
+      <comparator>no.priv.garshol.duke.comparators.Levenshtein</comparator>
+      <low>0.48</low>
+      <high>0.8</high>
+    </property>
+
+    <property>
+      <name>LASTNAME</name>
+       <comparator>no.priv.garshol.duke.comparators.Levenshtein</comparator>
+      <low>0.3</low>
+      <high>0.8</high>
+    </property> 
+    
+  </schema>
+  
+  
+  
+  <data-source class="no.priv.garshol.duke.datasources.InMemoryDataSource">
+  <param name="input-file" value="Whatever.json"/>
+  </data-source> 
+  
+ 
+<!--    <data-source class="no.priv.garshol.duke.datasources.JsonDataSource">
+  <param name="input-file" value="Whatever.json"/>
+  </data-source> 
+ 
+ 
+     <data-source class="no.priv.garshol.duke.datasources.JsonDataSource">
+  <param name="input-file" value="Whatever2.json"/>
+  </data-source>  -->
+
+ <!--  <database class="no.priv.garshol.duke.databases.LuceneDatabase">
+    <param name="path" value="C:\ASHUTOSH\workspace\tmp\ct-visma-1"/>
+  </database>
+    -->
+</duke>

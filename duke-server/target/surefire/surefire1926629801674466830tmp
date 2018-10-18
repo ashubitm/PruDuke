@@ -1,0 +1,34 @@
+#surefire
+#Wed Sep 26 17:44:36 IST 2018
+testClassesDirectory=C\:\\Users\\SONY VAIO\\git\\Duke\\duke-server\\target\\test-classes
+classPathUrl.4=C\:\\Users\\SONY VAIO\\.m2\\repository\\javax\\servlet\\servlet-api\\2.4\\servlet-api-2.4.jar
+classPathUrl.3=C\:\\Users\\SONY VAIO\\git\\Duke\\duke-core\\target\\duke-core-1.3-SNAPSHOT-tests.jar
+classPathUrl.2=C\:\\Users\\SONY VAIO\\git\\Duke\\duke-core\\target\\duke-core-1.3-SNAPSHOT.jar
+useManifestOnlyJar=true
+classPathUrl.1=C\:\\Users\\SONY VAIO\\git\\Duke\\duke-server\\target\\classes
+reportsDirectory=C\:\\Users\\SONY VAIO\\git\\Duke\\duke-server\\target\\surefire-reports
+classPathUrl.0=C\:\\Users\\SONY VAIO\\git\\Duke\\duke-server\\target\\test-classes
+dirscanner.0=directoryScannerOptions
+providerConfiguration=org.apache.maven.surefire.junit4.JUnit4Provider
+testSuiteDefinitionTestSourceDirectory=C\:\\Users\\SONY VAIO\\git\\Duke\\duke-server\\src\\test\\java
+surefireClassPathUrl.1=C\:\\Users\\SONY VAIO\\.m2\\repository\\org\\apache\\maven\\surefire\\surefire-api\\2.8.1\\surefire-api-2.8.1.jar
+surefireClassPathUrl.0=C\:\\Users\\SONY VAIO\\.m2\\repository\\org\\apache\\maven\\surefire\\surefire-junit4\\2.8.1\\surefire-junit4-2.8.1.jar
+runOrder=filesystem
+report.2=org.apache.maven.surefire.report.XMLReporter
+useSystemClassLoader=true
+report.1=org.apache.maven.surefire.report.BriefFileReporter
+report.0=org.apache.maven.surefire.report.ForkingConsoleReporter
+excludes0=**/*$*
+isTrimStackTrace=true
+dirscanner.0.params=C\:\\Users\\SONY VAIO\\git\\Duke\\duke-server\\target\\test-classes|[**/Test*.java, **/*Test.java, **/*TestCase.java]|[**/*$*]
+includes2=**/*TestCase.java
+enableAssertions=true
+includes1=**/*Test.java
+failIfNoTests=false
+includes0=**/Test*.java
+dirscanner.0.types=java.io.File|java.util.ArrayList|java.util.ArrayList
+classPathUrl.8=C\:\\Users\\SONY VAIO\\.m2\\repository\\com\\h2database\\h2\\1.3.176\\h2-1.3.176.jar
+classPathUrl.7=C\:\\Users\\SONY VAIO\\.m2\\repository\\org\\hamcrest\\hamcrest-core\\1.3\\hamcrest-core-1.3.jar
+childDelegation=false
+classPathUrl.6=C\:\\Users\\SONY VAIO\\.m2\\repository\\junit\\junit\\4.11\\junit-4.11.jar
+classPathUrl.5=C\:\\Users\\SONY VAIO\\.m2\\repository\\org\\codehaus\\fabric3\\api\\commonj\\1.1.1\\commonj-1.1.1.jar
